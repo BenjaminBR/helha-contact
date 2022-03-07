@@ -1,0 +1,49 @@
+<div class="m-5">
+  <div class="mb-3">
+    <label for="nom" class="form-label">Nom</label>
+    <input
+      type="text"
+      class="form-control"
+      id="nom"
+      [(ngModel)]="newContact.nom"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="prenom" class="form-label">Prénom</label>
+    <input
+      type="text"
+      class="form-control"
+      id="prenom"
+      [(ngModel)]="newContact.prenom"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="email" class="form-label">Email</label>
+    <input
+      type="email"
+      class="form-control"
+      id="email"
+      [(ngModel)]="newContact.email"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="dateNaissance" class="form-label">Date de naissance</label>
+    <input
+      type="text"
+      class="form-control"
+      id="dateNaissance"
+      [(ngModel)]="newContact.dateNaissance"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="photo" class="form-label">Photo</label>
+    <input
+      type="text"
+      class="form-control"
+      id="photo"
+      [(ngModel)]="newContact.photo"
+    />
+  </div>
+
+  <button (click)="saveContact()" class="btn btn-primary">Enregistrer</button>
+</div>
