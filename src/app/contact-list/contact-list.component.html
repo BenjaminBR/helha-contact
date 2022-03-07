@@ -1,0 +1,23 @@
+<!--
+  m-5: ajouter un margin de 5 (haut,bas,gauche,droite)
+  table: classe Bootstrap pour définir un tableau
+  table-striped: classe Bootstrap pour définir un tableau avec une couleur différente une ligne sur 2
+-->
+<div class="m-5">
+  <table class="table table-striped">
+    <thead>
+      <th>Nom</th>
+      <th>Prénom</th>
+      <th>Email</th>
+      <th>Téléphone</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let contact of contacts">
+        <td>{{ contact.nom }}</td>
+        <td>{{ contact.prenom }}</td>
+        <td>{{ contact.email }}</td>
+        <td>{{ contact.dateNaissance }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
